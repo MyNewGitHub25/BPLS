@@ -8,8 +8,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+use auth;
+
 class User extends Authenticatable
 {
+    use Notifiable;
+    protected $guard = 'users';
+    protected $table = 'staff_accounts';
+
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
