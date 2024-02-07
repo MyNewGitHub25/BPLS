@@ -19,13 +19,10 @@ img{
     height: 30%;
     margin: 15px;
 }
-#inputpass, #inputuser{
+#username, #password{
     align-items: center;
     display: block;
     width: 90%;
-}
-#invalid-feedback{
-    margin-left: 47px;
 }
 #basic-addon1{
     border-radius: 0;
@@ -54,6 +51,9 @@ img{
     color: grey;
     margin-top: 12px;
     text-align: center;
+}
+.d-none {
+    display: none !important;
 }
 @media only screen and (max-width: 600px) {
     .Copyright {

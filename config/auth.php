@@ -40,9 +40,9 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ], 
-        'users' => [
+        'staff' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'staffs',
         ],
     ],
 
@@ -68,8 +68,11 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'staffs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Staff\Accounts::class,
+        ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Resetting Passwords
